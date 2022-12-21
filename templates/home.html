@@ -1,0 +1,68 @@
+<head>
+    <TITLE>Knew It</TITLE>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    {% load static %}<link rel="stylesheet" href="{% static "styles.css" %}" />
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+</head>
+
+<div class="navbar" style="border-bottom: 1px solid #908b8b;">
+    {% load static %} <img class="logo" src="{% static "images/KnewIt_bold@3x-Logo.png" %}" alt="logo">
+{#    <div class="navitems">#}
+{#        <a href=""  id="home_link">Home</a>#}
+{#        <a href="" id="about_link">About</a>#}
+{#        <a href="" id="post_new">Resume</a>#}
+{#        <a href="" id="home_link"></a>#}
+{#    </div>#}
+</div>
+
+
+<body>
+    <div class="sidebar">
+      <a class="active" href="#home">Dashboard</a>
+      <a href="#news">Learn</a>
+      <a href="#contact">Ranking</a>
+      <a href="#about">Profile</a>
+    </div>
+    <div class="content" style="display:flex;">
+        <div class="kpi_display">
+            <p class="kpi_inprogress">Topics In Progress</p>
+            <h1 class="inprogress_value">15</h1>
+        </div>
+        <div class="kpi_display">
+            <p class="kpi_inprogress">Terms Mastered</p>
+            <h1 class="inprogress_value">90</h1>
+        </div>
+        <div class="kpi_display">
+            <p class="kpi_inprogress">Most Studied Topic</p>
+            <h1 class="inprogress_value" id="most_studied">World History</h1>
+        </div>
+        <div class="kpi_display">
+            <p class="kpi_inprogress">Total Learning Time</p>
+            <h1 class="inprogress_value" id="time">5 Hours, 10 Minutes</h1>
+            <p style="color:red;text-align:center;">-20% VS Last Month</p>
+        </div>
+{#        <div class="my_tests">#}
+{#            <h1> Recent Tests</h1>#}
+{#                <ul>#}
+{#                    {% for post in yourtests_list %}#}
+{#                    <li>{{ post.text }}</li>#}
+{#                    {% endfor %}#}
+{#                </ul>#}
+{#        </div>#}
+
+    </div>
+
+
+</body>
+
+
+
+{#<div class="sidebar" style="width: 200px;position:relative;">#}
+{#    <button class="button_class" style="width:75px;height: 75px;"><i class="fa-solid fa-arrow-right"></i></button>#}
+{#    #}
+{#    <div class="sidebar_elem" style="background-color: grey; width: 200px;position:relative;">#}
+{#    <p>tools</p>#}
+{#    </div>#}
+{#</div>#}
